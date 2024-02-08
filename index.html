@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+    </style>
+</head>
+
+<body>
+    <nav class="bg-transparent">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center rounded">
+            <div>
+                <img src="logo.png" alt="Logo" class="h-8">
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-800 hover:text-gray-600">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-gray-600">About</a>
+                <a href="#blog" class="text-gray-800 hover:text-gray-600">Blog</a>
+                <a href="#contact" class="text-gray-800 hover:text-gray-600">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile menu button -->
+                <button class="text-gray-800 hover:text-gray-600 focus:outline-none">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M2 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zM3 10a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H3zm-1 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add your sections here -->
+    <section id="home" class="bg-white py-16 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+            <div class="md:w-1/2">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Good health leads to better life.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Contact Us</button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="css/banner image.png" alt="Image" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Medical Process</h2>
+            <p class="text-lg text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center mb-8">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-xl font-bold mr-4">1</div>
+                    <p>Step 1 Description</p>
+                </div>
+                <hr class="border-gray-300 md:hidden w-24 my-4">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-xl font-bold mr-4">2</div>
+                    <p>Step 2 Description</p>
+                </div>
+                <hr class="border-gray-300 md:hidden w-24 my-4">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-xl font-bold mr-4">3</div>
+                    <p>Step 3 Description</p>
+                </div>
+            </div>
+            <img src="css/steps.png" alt="Bottom Image" class="mx-auto">
+        </div>
+    </section>
+
+    <section id="blog" class="py-20">
+        <div class="flex justify-center items-center h-fit-content p-6">
+            <div class="container mx-auto p-2">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold mb-2">Really simple pricing</h2>
+                    <p class="text-gray-600">No hidden fees, no limits</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-stretch space-y-4 md:space-y-0 md:space-x-4">
+                    <!-- Free Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">FREE</h3>
+                        <p class="text-4xl font-bold">$0<span class="text-lg">/month</span></p>
+                        <p class="text-gray-500">Perfect for startups</p>
+                    </div>
+                    <ul class="mb-6">
+                        <li>✔ 2 users</li>
+                        <li>✔ SaaS Metrics</li>
+                        <li>✖ Team collaboration</li>
+                        <li>✖ Export HTML code</li>
+                        <li>✖ Upload Your Logo</li>
+                    </ul>
+                    <button class="bg-blue-500 text-white w-full py-2 rounded-lg">Get Started</button>
+                    <p class="text-center text-gray-500 text-sm mt-3">No credit card required</p>
+                    </div>
+                    <!-- Basic Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full md:scale-105 relative">
+                    <div class="absolute top-0 transform -translate-y-1/2 right-4">
+                        <span class="text-xs font-semibold bg-yellow-400 text-white py-1 px-2 rounded-full uppercase">Popular</span>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">BASIC</h3>
+                        <p class="text-4xl font-bold">$29<span class="text-lg">/month</span></p>
+                        <p class="text-gray-500">Perfect for company</p>
+                    </div>
+                    <ul class="mb-6">
+                        <li>✔ 2 users</li>
+                        <li>✔ SaaS Metrics</li>
+                        <li>✔ Team collaboration</li>
+                        <li>✖ Export HTML code</li>
+                        <li>✖ Upload Your Logo</li>
+                    </ul>
+                    <button class="bg-blue-500 text-white w-full py-2 rounded-lg">Get Started</button>
+                    <p class="text-center text-gray-500 text-sm mt-3">No credit card required</p>
+                    </div>
+                    <!-- Pro Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">PRO</h3>
+                        <p class="text-4xl font-bold">$59<span class="text-lg">/month</span></p>
+                        <p class="text-gray-500">Perfect for business</p>
+                    </div>
+                    <ul class="mb-6">
+                        <li>✔ 2 users</li>
+                        <li>✔ SaaS Metrics</li>
+                        <li>✔ Team collaboration</li>
+                        <li>✔ Export HTML code</li>
+                        <li>✔ Upload Your Logo</li>
+                    </ul>
+                    <button class="bg-blue-500 text-white w-full py-2 rounded-lg">Get Started</button>
+                    <p class="text-center text-gray-500 text-sm mt-3">No credit card required</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="w-full bg-blue-600 w-full h-fit-content ">
+        <div class="container mx-auto px-6 pt-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="text-white md:w-1/2">
+                <h1 class="font-bold text-4xl mb-4">Start your 14-days Free trial</h1>
+                <p class="mb-6">Bring your team together. No contracts, no commitments.</p>
+                <div class="flex flex-col sm:flex-row items-center mb-2">
+                <input type="text" placeholder="Your email address" class="p-3 w-full sm:w-auto mb-4 sm:mb-0 sm:mr-4 rounded-md">
+                <button class="bg-black text-white p-3 rounded-md">Subscribe</button>
+                </div>
+                <div class="flex items-center">
+                <p class="mr-4">✔ No credit card required</p>
+                <p>✔ Cancel anytime</p>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-end">
+                <img src="css/svg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center lg:text-left">
+        <div class="container mx-auto px-6 pt-10 pb-6">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full lg:w-1/4 px-6 mb-6 lg:mb-0">
+              <h2 class="text-2xl font-semibold text-gray-800">Sala</h2>
+              <p class="mt-4 text-gray-600">A amazing WordPress theme designed specifically for a startup, apps, business, SaaS, and IT services.</p>
+            </div>
+            <div class="w-full lg:w-1/4 px-6 mb-6 lg:mb-0">
+              <h3 class="text-gray-700 uppercase">Company</h3>
+              <ul class="mt-4">
+                <li><a href="#" class="text-gray-600 hover:underline">About us</a></li>
+                <li><a href="#" class="text-gray-600 hover:underline">Blog</a></li>
+                <li><a href="#" class="text-gray-600 hover:underline">Careers</a></li>
+                <li><a href="#" class="text-gray-600 hover:underline">Contact</a></li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-1/4 px-6">
+              <h3 class="text-gray-700 uppercase">Social Media</h3>
+              <ul class="mt-4">
+                <li><a href="#" class="text-gray-600 hover:underline">Facebook</a></li>
+                <li><a href="#" class="text-gray-600 hover:underline">Twitter</a></li>
+                <li><a href="#" class="text-gray-600 hover:underline">Instagram</a></li>
+                <li><a href="#" class="text-gray-600 hover:underline">Linkedin</a></li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-1/4 px-6">
+                <h3 class="text-gray-700 uppercase">Newsletter</h3>
+                <p class="mt-4 text-gray-600">Subscribe our newsletter and stay up to date about the company</p>
+                <div class="mt-4 flex">
+                  <input type="email" class="p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:border-blue-500" placeholder="Your email address">
+                  <button class="p-2 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 focus:outline-none">Subscribe</button>
+                </div>
+            </div>
+          </div>
+      
+          <!-- Copyright info -->
+          <div class="text-center text-gray-600 mt-10 border-t pt-4">
+            © 2021 Uxper. All rights reserved
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        // Add JavaScript if needed
+    </script>
+</body>
+
+</html>
